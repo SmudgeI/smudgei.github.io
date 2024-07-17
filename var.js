@@ -1,5 +1,3 @@
-        var PASS = P1 + P2 + P3;
-
         var url = document.querySelector("a");
 
         var ALERT = 0;
