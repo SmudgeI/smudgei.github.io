@@ -1,3 +1,5 @@
+        var PS = +;
+
         var url = document.querySelector("a");
 
         var ALERT = 0;
