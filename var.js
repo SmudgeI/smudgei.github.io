@@ -1,3 +1,8 @@
+<script src="P.js"></script>
+<script src="P1.js"></script>
+<script src="P2.js"></script>
+<script src="P3.js"></script>
+
         var P1 = PASS01 + (PASS07 * PASS13) / PASS03 - PASS09 - (PASS14 * 0) / PASS05;
 
         var P2 = PASS10 - PASS02 + PASS09 * PASS04 - PASS15 + PASS07 + PASS05 / PASS11 * PASS01 + PASS03 * PASS06 / PASS14 - P1 * PASS12;
