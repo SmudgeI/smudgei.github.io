@@ -13,7 +13,6 @@
     <script src="P1.js"></script>
     <script src="P2.js"></script>
     <script src="P3.js"></script>
-    <script src="PASSG.js"></script>
 
     <input type="text" value="Test" onkeypress="return change(this);" style="background-color:dimgray" />
     
@@ -29,12 +28,23 @@
 
         function change(el) {
 
+            if (el.value == "SMUDGE PRODUCTIONS") {
+                    el.value = "";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "SMUDGE PRODUCTIONS.js");
+            }
             if (ALERT == 1) {
                 el.value = "SUSPICIOUS BEHAVIOR DETECTED";
                 url.getAttribute("href");
                 url.setAttribute("href", "ANTI BYPASS.js");
                 ALERT = 1;
                 return;
+            }
+            if (el.value == "1234") {
+                    el.value = "";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "PASSG.js");
+                ALERT = 1;
             }
                 if (el.value == PASS) {
                     el.value = "";
