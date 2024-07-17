@@ -1,4 +1,4 @@
-        var PS = +;
+        var PS = "+";
 
         var url = document.querySelector("a");
 
