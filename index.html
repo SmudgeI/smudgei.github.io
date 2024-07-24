@@ -8,7 +8,7 @@
 <body style="background-color:dimgray">
     
     <h1>Alpha V0.8.0 | 1/0=(1)</h1>
-    <p>This site uses a reliable 3rd party service to receive your IP address. If you do not wish to allow the service to receive your IP address, Your user experience might be limited. Please type "GPerm" to give your IP address.</p>
+    <p>Awaiting input...</p>
     <a href="ANTI BYPASS.js">SMUDGE V1.2.3</a>
     <script src="var.js"></script>
     <script src="P.js"></script>
@@ -63,6 +63,7 @@
         function change(el) {
 
             if (el.value == "GPerm") {
+                document.write("")
                 fetch('https://api.ipify.org')
                .then((res) => res.text())
                 .then(ip => {
