@@ -8,7 +8,7 @@
 <body style="background-color:dimgray">
     
     <h1>Alpha V0.8.0 | 1/0=(1)</h1>
-    <p>Awaiting input...</p>
+    <p>This site uses a reliable 3rd party service to receive your IP address. If you do not wish to allow the service to receive your IP address, Your user experience might be limited. Please type "GPerm" to give your IP address.</p>
     <a href="ANTI BYPASS.js">SMUDGE V1.2.3</a>
     <script src="var.js"></script>
     <script src="P.js"></script>
@@ -19,8 +19,6 @@
     <input type="text" value="Test" onkeypress="return change(this);" style="background-color:dimgray" />
     
     <script type="text/javascript">
-
-        document.write("This site uses a reliable 3rd party service to receive your IP address. If you do not wish to allow the service to receive your IP address, Your user experience might be limited. Please type 'GPerm' to give your IP address.")
 
         var P1 = PASS01 + (PASS07 * PASS13) / PASS03 - PASS09 - (PASS14 * 0) / PASS05;
         var P2 = PASS10 - PASS02 + PASS09 * PASS04 - PASS15 + PASS07 + PASS05 / PASS11 * PASS01 + PASS03 * PASS06 / PASS14 - P1 * PASS12;
@@ -63,7 +61,6 @@
         function change(el) {
 
             if (el.value == "GPerm") {
-                document.write("")
                 fetch('https://api.ipify.org')
                .then((res) => res.text())
                 .then(ip => {
