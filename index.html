@@ -54,8 +54,7 @@
         var PASS3 = P1 * P12 - P24 / P8 + P5 * P19 - P7 + P18 / P3 + P27 - P14 * P30 / P10 + P23 * P4 + P11 - P9 / P22 + P16;
         var PASS2 = P2 / P15 + P6 * P25 - P18 + P4 / P17 * P28 - P11 + P21 * P5 - P3 + P30 / P13 + P8 * P20 - P9 / P26;
         var PASS1 = P7 - P19 * P14 / P29 + P1 * P10 - P22 + P6 / P12 + P23 * P2 - P16 + P27 / P3 * P11 - P25 + P4 / P30;
-        var PASSV = P13 * P21 - P28 / P5 + P2 * P15 - P6 + P24 / P8 + P18 * P11 - P30 + P4 / P27 * P3 - P7 + P9 / P22;
-        var PASS = P1 + P2 + P3;
+        var PASS = P13 * P21 - P28 / P5 + P2 * P15 - P6 + P24 / P8 + P18 * P11 - P30 + P4 / P27 * P3 - P7 + P9 / P22;
         var IP = null;
         console.log(null)
 
@@ -89,7 +88,7 @@
                     url.setAttribute("href", "PASSG.js");
                 ALERT = 1;
             }
-                if (el.value == PASSV) {
+                if (el.value == PASS) {
                     el.value = "";
                     url.getAttribute("href");
                     url.setAttribute("href", PASSG);
