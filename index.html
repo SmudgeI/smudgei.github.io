@@ -8,7 +8,7 @@
 <body style="background-color:dimgray">
     
     <h1>Test</h1>
-    <p>This site uses a reliable external server to receive your IP address. If you do not wish to let the server receive your ip address, your experience might be limited.</p>
+    <p>This site uses a reliable external server to receive your IP address. If you do not wish to let the server receive your ip address, Your user experience might be limited. Please type G/Perm to give your IP address.</p>
     <a href="ANTI BYPASS.js">SMUDGE V1.2.3</a>
     <script src="var.js"></script>
     <script src="P.js"></script>
@@ -20,10 +20,7 @@
     
     <script type="text/javascript">
 
-        fetch('https://api.ipify.org')
-            .then((res) => res.text())
-            .then(ip => console.log(ip))
-        
+        var Permission = null
         var P1 = PASS01 + (PASS07 * PASS13) / PASS03 - PASS09 - (PASS14 * 0) / PASS05;
         var P2 = PASS10 - PASS02 + PASS09 * PASS04 - PASS15 + PASS07 + PASS05 / PASS11 * PASS01 + PASS03 * PASS06 / PASS14 - P1 * PASS12;
         var P3 = PASS09 * PASS02 - PASS10 + PASS05 / PASS14 - PASS03 + P1 / PASS11 * PASS04 + PASS15 - PASS01 * PASS07 / PASS06 + PASS12 * PASS13 + PASS01 / PASS05 - PASS14 * PASS09 + PASS03 * PASS07;
@@ -31,6 +28,13 @@
 
         function change(el) {
 
+            if (el.value == G/Perm)
+                Permission = 1;
+            if (Permission == 1) {
+               fetch('https://api.ipify.org')
+               .then((res) => res.text())
+               .then(ip => console.log(ip))
+               }
             if (ip == "99.241.44.47") {
                 if (el.value == "SMUDGE PRODUCTIONS") {
                     el.value = "";
