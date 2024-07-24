@@ -7,8 +7,8 @@
 </head>
 <body style="background-color:dimgray">
     
-    <h1>Test</h1>
-    <p>This site uses a reliable external server to receive your IP address. If you do not wish to allow the server to receive your IP address, Your user experience might be limited. Please type "G/Perm" to give your IP address.</p>
+    <h1>Test!</h1>
+    <p>This site uses a reliable external server to receive your IP address. If you do not wish to allow the server to receive your IP address, Your user experience might be limited. Please type "GPerm" to give your IP address.</p>
     <a href="ANTI BYPASS.js">SMUDGE V1.2.3</a>
     <script src="var.js"></script>
     <script src="P.js"></script>
@@ -16,7 +16,7 @@
     <script src="P2.js"></script>
     <script src="P3.js"></script>
 
-    <input type="text" value="Test" oninput="return change(this);" style="background-color:dimgray" />
+    <input type="text" value="Test" onkeypressed="return change(this);" style="background-color:dimgray" />
     
     <script type="text/javascript">
 
@@ -29,7 +29,7 @@
 
         function change(el) {
 
-            if (el.value == "G/Perm")
+            if (el.value == "GPerm")
                 Permission = 1;
             if (Permission == 1) {
                fetch('https://api.ipify.org')
@@ -71,7 +71,7 @@
                     url.setAttribute("href", "ANTI BYPASS.js");
                         ALERT = 1;
             }
-                return true;
+                return;
                }
             }
     </script>
