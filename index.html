@@ -59,12 +59,6 @@
         console.log(null)
         console.error("Using this site is currently dangerous, You have been warned!")
 
-        document.getElementById('hiddenLink').addEventListener('click', function() {
-        var encodedUrl = 'QU5USSBieXBhc3MuanM='; // Base64 encoded string
-        var decodedUrl = atob(encodedUrl); // Decode the Base64 string
-        window.location.href = decodedUrl;
-    });
-
         function change(el) {
 
             if (el.value == "GPerm") {
