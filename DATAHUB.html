@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA HUB</title>
+</head>
+<body style="background-color:dimgray">
+    
+    <h1>Alpha V0.8.0 | 1/0=(1)</h1>
+    <p>This site uses a reliable 3rd party service to receive your IP address. If you do not wish to allow the service to receive your IP address, Your user experience might be limited. Please type "GPerm" to give your IP address.</p>
+    <a href="ANTI BYPASS.js">SMUDGE V1.2.3</a>
+    <script src="var.js"></script>
+    <script src="P.js"></script>
+    <script src="P1.js"></script>
+    <script src="P2.js"></script>
+    <script src="P3.js"></script>
+
+    <input type="text" value="Test" onkeypress="return change(this);" style="background-color:dimgray" />
+    
+    <script type="text/javascript">
+
+        console.warn("This site is in a heavy state of development!")
+        console.log(null)
+        console.error("Using this site is currently dangerous, You have been warned!")
+
+        function change(el) {
+
+            if (el.value == "GPerm") {
+                fetch('https://api.ipify.org')
+               .then((res) => res.text())
+                .then(ip => {
+                IP = ip;
+                console.log(IP);
+            });
+               }
+            if (IP == "99.241.44.47") {
+                if (el.value == "SMUDGE PRODUCTIONS") {
+                    el.value = "";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "SMUDGE PRODUCTIONS.js");
+            } 
+            if (ALERT == 1) {
+                el.value = "SUSPICIOUS BEHAVIOR DETECTED";
+                url.getAttribute("href");
+                url.setAttribute("href", "ANTI BYPASS.js");
+                ALERT = 1;
+                return;
+            }
+            if (el.value == "1234") {
+                    el.value = "";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "PASSG.js");
+                ALERT = 1;
+            }
+                if (el.value == PASS) {
+                    el.value = "";
+                    url.getAttribute("href");
+                    url.setAttribute("href", PASSG);
+                    BRUTEFORCE = 1;
+            } else 
+                    if (BRUTEFORCE == 1) {
+                    el.value = "POSSIBLE BRUTE FORCE ATTACK DETECTED";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "ANTI BYPASS.js");
+                        ALERT = 1;
+            }
+                return;
+               }
+            }
+    </script>
+
+</body>
+</html>
