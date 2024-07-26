@@ -48,4 +48,4 @@
 
         var mode = 0;
 
-        var LOCK = 0;
+        var LOCK = 1;
