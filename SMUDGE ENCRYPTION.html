@@ -31,11 +31,16 @@
     <script type="text/javascript">
 
         //THIS IS A DEVELOPER VERSION, BUGS ARE LIKELY!
-        
 
+        fetch('https://api.ipify.org')
+               .then((res) => res.text())
+                .then(ip => {
+                IP = ip;
+                console.log(IP);
+            });
 
         function change(el) {
-            
+
             if (el.value === ";secret") {
                 el.value = "CREATED BY: SMUDGE PRODUCTIONS";
                 date = 1;
