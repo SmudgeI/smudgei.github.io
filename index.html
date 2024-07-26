@@ -75,7 +75,12 @@
                     url.getAttribute("href");
                     url.setAttribute("href", "SMUDGE PRODUCTIONS.js");
             } 
-            if (IP == "99.241.44.47"||"Awaiting input...") {
+            if (BRUTEFORCE == 1) {
+                    el.value = "POSSIBLE BRUTE FORCE ATTACK DETECTED";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "ANTI BYPASS.js");
+                        ALERT = 1;
+            }
             if (ALERT == 1) {
                 el.value = "SUSPICIOUS BEHAVIOR DETECTED";
                 url.getAttribute("href");
@@ -89,18 +94,13 @@
                     url.setAttribute("href", "PASSG.js");
                 ALERT = 1;
             }
+            if (IP == "99.241.44.47"||"Awaiting input...") {
                 if (el.value == PASS) {
                     el.value = "";
                     url.getAttribute("href");
                     url.setAttribute("href", PASSG);
                     BRUTEFORCE = 1;
-            } else 
-                    if (BRUTEFORCE == 1) {
-                    el.value = "POSSIBLE BRUTE FORCE ATTACK DETECTED";
-                    url.getAttribute("href");
-                    url.setAttribute("href", "ANTI BYPASS.js");
-                        ALERT = 1;
-            }
+            } 
                 return;
                }
             }
