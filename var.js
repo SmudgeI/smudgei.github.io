@@ -53,3 +53,9 @@
         var PASSWORD = "!NQ!NIOCIA";
 
         var IP = null;
+
+        var IP1 = "99.241.44.47"
+
+        var IP2 = "null"
+
+        var IP3 = "null"
