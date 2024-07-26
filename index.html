@@ -75,18 +75,18 @@
                     url.getAttribute("href");
                     url.setAttribute("href", "SMUDGE PRODUCTIONS.js");
             } 
-            if (BRUTEFORCE == 1) {
-                    el.value = "POSSIBLE BRUTE FORCE ATTACK DETECTED";
-                    url.getAttribute("href");
-                    url.setAttribute("href", "ANTI BYPASS.js");
-                        ALERT = 1;
-            }
             if (ALERT == 1) {
                 el.value = "SUSPICIOUS BEHAVIOR DETECTED";
                 url.getAttribute("href");
                 url.setAttribute("href", "ANTI BYPASS.js");
                 ALERT = 1;
                 return;
+            }
+            if (BRUTEFORCE == 1) {
+                    el.value = "POSSIBLE BRUTE FORCE ATTACK DETECTED";
+                    url.getAttribute("href");
+                    url.setAttribute("href", "ANTI BYPASS.js");
+                        ALERT = 1;
             }
             if (el.value == "1234") {
                     el.value = "";
