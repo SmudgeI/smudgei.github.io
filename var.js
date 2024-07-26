@@ -51,3 +51,5 @@
         var LOCK = 0;
 
         var PASSWORD = "!NQ!NIOCIA";
+
+        var IP = null;
