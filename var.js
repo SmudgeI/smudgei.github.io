@@ -49,3 +49,5 @@
         var mode = 0;
 
         var LOCK = 0;
+
+        var PASSWORD = "!NQ!NIOCIA";
