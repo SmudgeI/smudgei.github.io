@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read JavaScript File</title>
+</head>
+<body>
+    <div id="text">This text will change!</div>
+    <a href="SAVE_GAME1.js">Check save file contents</a><br>
+    <a href="SAVE_GAME1.js" download="NEW NAME"><button>SAVE</button></a><br>
+    <input type="file" id="fileInput" accept=".js" />
+    
+    <script>
+        // Get the file input element
+        const fileInput = document.getElementById('fileInput');
+        
+        // Listen for changes (file selection)
+        fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];  // Get the selected file
+
+            if (file) {
+                // Create a new FileReader
+                const reader = new FileReader();//////////////////////////////////REMEMBER TO SET THE SAVE PATH!!!!!!!!!!!!!!!!!!!!!
+                
+                // Set up a callback function for when the file is read
+                reader.onload = function(e) {
+                    // Get the file content
+                    const fileContent = e.target.result;
+                    
+                    // You can also execute the file's JavaScript code if needed
+                    if (event.target.files[0].name == 'SAVE_GAME1.js') {
+                    try {
+                        eval(fileContent); // Executing the JavaScript code
+                    } catch (error) { 
+                        console.error('Error executing the file:', error);
+                    }
+                    } else {
+                        document.getElementById('text').innerHTML = 'DO NOT USE UNKNOWN FILES! UNKNOWN FILES ARE UNPREDICTABLE AND CAN DAMAGE YOUR COMPUTER.';
+                        console.warn('UNKNOWN FILE HAS BEEN DETECTED AND BLOCKED');
+                    }
+                };
+                
+                // Read the file as a text string
+                reader.readAsText(file);
+            } else {
+                console.log('No file selected.');
+            }
+        });
+    </script>
+</body>
+</html>
